@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Reservation Hotel Room</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<h2>Hotel Reservation Form</h2>
+
+<form action="" method="post">
+    <div class="form-header">
+        <h3>Book Your Perfect Stay</h3>
+    </div>
+    
+    <fieldset>
+        <legend><span class="section-icon">👤</span> Personal Information</legend>
+        <table cellspacing="5" cellpadding="5" border="0">
+            <tr>
+                <td>1. Full Name<br /><input type="text" name="name" size="30" placeholder="Enter your full name" /></td>
+            </tr>
+            <tr>
+                <td>2. Gender<br />
+                    <select name="gender">
+                        <option value="" disabled="disabled" selected="selected">Select your gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>3. Email Address<br /><input type="text" name="email" size="30" placeholder="example@gmail.com" /></td>
+            </tr>
+            <tr>
+                <td>4. Phone Number<br /><input type="text" name="phone" size="30" placeholder="+62 123 456 789" /></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend><span class="section-icon">🏨</span> Room Reservation Details</legend>
+        <table cellspacing="5" cellpadding="5" border="0">
+            <tr>
+                <td>1. Reservation Name<br /><input type="text" name="reservation_name" size="30" placeholder="Name as on ID" /></td>
+            </tr>
+            <tr>
+                <td>2. Booking Date<br /><input type="text" name="booking_date" size="30" placeholder="DD/MM/YYYY" /></td>
+            </tr>
+            <tr>
+                <td>3. Room Type<br />
+                    <select name="room_type">
+                        <option value="" disabled="disabled" selected="selected">Select room type</option>
+                        <option>Deluxe Room - $120/night</option>
+                        <option>Suite Room - $200/night</option>
+                        <option>Standard Room - $80/night</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>4. Bed Type<br />
+                    <select name="bed_type">
+                        <option value="" disabled="disabled" selected="selected">Select bed type</option>
+                        <option>Single Bed</option>
+                        <option>Double Bed</option>
+                        <option>King Size Bed</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>5. Breakfast<br />
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" name="breakfast" value="With" id="with-breakfast" />
+                            <label for="with-breakfast">With Breakfast (+$15)</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" name="breakfast" value="Without" id="without-breakfast" />
+                            <label for="without-breakfast">Without Breakfast</label>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend><span class="section-icon">💳</span> Payment Information</legend>
+        <table cellspacing="5" cellpadding="5" border="0">
+            <tr>
+                <td>1. Check-in Date<br /><input type="text" name="checkin" size="30" placeholder="DD/MM/YYYY" /></td>
+            </tr>
+            <tr>
+                <td>2. Check-out Date<br /><input type="text" name="checkout" size="30" placeholder="DD/MM/YYYY" /></td>
+            </tr>
+            <tr>
+                <td>3. Payment Method<br />
+                    <select name="payment">
+                        <option value="" disabled="disabled" selected="selected">Select payment method</option>
+                        <option>Cash on Arrival</option>
+                        <option>Credit Card</option>
+                        <option>Bank Transfer</option>
+                        <option>Digital Wallet</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <div class="submit-container">
+        <input type="submit" value="Complete Reservation" />
+    </div>
+</form>
+
+<div class="footer">
+    &copy; 2023 Luxury Hotel &amp; Resort | All Rights Reserved
+</div>
+
+</body>
+</html>
